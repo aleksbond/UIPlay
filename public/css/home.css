@@ -1,0 +1,112 @@
+h1, h2, h3, h4, h5 {
+	color: #ffbb33;
+	font-family: "Verdana", Verdana, sans-serif;
+}
+
+#header {
+	height: 30%;
+	background: #553311;
+	border-radius: 10px;
+	margin-top: 20px;
+}
+
+#gallery {
+	height: 60%;
+	margin-top: 20px;
+	border-radius: 10px;
+}
+
+#galleria { 
+	width: 100%; 
+	height: 100%;  
+}
+
+#bio {
+	height: 60%;
+	margin-top: 20px;
+	border-radius: 10px;
+	background: #553311;
+	color: #ffbb33;
+	
+	.description {
+		margin-left: 5%;
+		margin-right: 5%;
+	}
+}
+
+#bio .description {
+	margin-left: 5%;
+	margin-right: 5%;
+}
+
+#bio h5 {
+	margin-left: 5%;
+	border-bottom: 1px solid #ffbb33;
+}
+
+.big_text {
+	font-size: 13.5em;
+}
+
+.medium_text {
+	font-size: 7.5em;
+}
+
+.tears {
+	-webkit-animation: 4s;
+	-webkit-animation-name: tearfall;
+	animation-duration: 4s;
+  	animation-name: tearfall;
+	padding-top: 7%;
+	padding-left: 6%;
+	padding-bottom: 8%;
+	background-image: -webkit-gradient(
+	linear,
+	left top, left bottom,
+	from(rgba(255, 187, 51, 1)),
+	to(rgba(85, 51, 17, 1))
+	);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+.sun {
+	padding-top: 3%;
+}
+
+.lean_right {
+	float: right;
+}
+
+.lean_left {
+	float: left;
+}
+
+.gradient {
+	background-color:#553311;
+	/* Firefox 3.6+ */
+	background-image: -moz-linear-gradient(#553311, #ffbb33);
+}
+
+@keyframes tearfall{
+	from {
+		padding-top: 4%;
+		padding-left: 10%;
+	}
+	to {
+		padding-top: 7%;
+		padding-left: 6%;
+	}
+}
+
+@-webkit-keyframes tearfall{
+	from {
+		padding-top: 4%;
+		padding-left: 10%;
+	}
+	to {
+		padding-top: 7%;
+		padding-left: 6%;
+	}
+}
+	

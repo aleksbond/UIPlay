@@ -1,13 +1,47 @@
 <link rel="stylesheet" href="/css/bootstrap.css" type="text/css" />
+<link rel="stylesheet" href="/css/home.css" type="text/css" />
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.js"></script>
+<script src="/galleria/galleria-1.2.9.min.js"></script>
 <!DOCTYPE html>
 <html lang="en">
+<div class="container">
   <div class="row">
-    <div class="span9">
-      Level 1 column
-      <div class="row">
-        <div class="span6 text-error">Level 2</div>
-        <div class="span3">Level 2</div>
+    <div id="header" class="span12">
+      <h1 class="big_text tears lean_left">Tears</h1> 
+      <div class="sun lean-right">
+        <h1>of the</h1> <h1 class="medium_text">Sun</h1>
       </div>
     </div>
   </div>
+  <div class="row">
+    <div class="span12">
+      <div class="row">
+        <div id="gallery" class="span8 gradient">
+          <div id="galleria">
+              <img src="/img/gk_0.jpg">
+              <img src="/img/gk_1.jpg">
+              <img src="/img/gk_2.jpg">
+              <img src="/img/gk_3.jpg">
+              <img src="/img/gk_4.jpg">
+              <img src="/img/gk_5.jpg">
+          </div>
+        </div>
+        <div id="bio" class="span4"><h5>Gustav Klimt</h5>
+          <div class="description">
+          Gustav Klimt (July 14, 1862 – February 6, 1918) was an Austrian symbolist painter and one of the most prominent members of the 
+          Vienna Secession   movement. Klimt is noted for his paintings, murals, sketches, and other art objects. Klimt's primary subject 
+          was the female body; his works are marked by a frank eroticism.<br>
+          Klimt's 'Golden Phase' was marked by positive critical reaction and financial success. Many of his paintings from this period 
+          include gold leaf. Klimt had previously used gold in his Pallas Athene (1898) and Judith I (1901), although the works most popularly 
+          associated with this period are the Portrait of Adele Bloch-Bauer I (1907) and The Kiss (1907–08).
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<script>
+    Galleria.loadTheme('/galleria/themes/classic/galleria.classic.min.js');
+    Galleria.run('#galleria');
+</script>
 </html>

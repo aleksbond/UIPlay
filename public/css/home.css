@@ -3,35 +3,26 @@ h1, h2, h3, h4, h5 {
 	font-family: "Verdana", Verdana, sans-serif;
 }
 
-#header {
+header {
 	height: 30%;
+	max-width: 80%;
 	background: #553311;
 	border-radius: 10px;
 	margin-top: 20px;
 }
 
 #gallery {
-	height: 60%;
+	max-width: 51%;
 	margin-top: 20px;
 	border-radius: 10px;
 }
 
-#galleria { 
-	width: 100%; 
-	height: 100%;  
-}
-
 #bio {
-	height: 60%;
+	max-width: 26.5%;
 	margin-top: 20px;
 	border-radius: 10px;
 	background: #553311;
 	color: #ffbb33;
-	
-	.description {
-		margin-left: 5%;
-		margin-right: 5%;
-	}
 }
 
 #bio .description {
@@ -88,6 +79,10 @@ h1, h2, h3, h4, h5 {
 	background-image: -moz-linear-gradient(#553311, #ffbb33);
 }
 
+.container {
+	margin-right: 25px;
+}
+
 @keyframes tearfall{
 	from {
 		padding-top: 4%;
@@ -107,6 +102,114 @@ h1, h2, h3, h4, h5 {
 	to {
 		padding-top: 7%;
 		padding-left: 6%;
+	}
+}
+
+@media screen and (max-width: 1024px) {
+	header {
+		max-width: 90%;
+	}
+	
+	#gallery {
+		max-width: 57%;
+	}
+	
+	#bio {
+		max-width: 35%;
+	}
+	
+	.tears {
+		-webkit-animation: none;
+		animation: none;
+	}
+	
+	.big_text {
+		font-size: 12em;
+	}
+	
+	.medium_text {
+		font-size: 5.5em;
+	}
+	
+	.container {
+		margin-left: 70px;
+		margin-right: 0px;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	
+	header {
+		max-width: 90%;
+	}
+	
+	#gallery {
+		max-width: 90%;
+	}
+	
+	#bio {
+		max-width: 90%;
+	}
+	
+	.sun h1 {
+		display: inline;
+	}
+	
+	.tears {
+		-webkit-animation: none;
+		animation: none;
+		float: none;
+	}
+	
+	.big_text {
+		font-size: 10em;
+	}
+	
+	.medium_text {
+		font-size: 4.5em;
+	}
+	
+	.container {
+		margin-left: 70px;
+		margin-right: 0px;
+	}
+}
+
+@media screen and (max-width: 520px) {
+	
+	header {
+		max-width: 90%;
+	}
+	
+	#gallery {
+		max-width: 90%;
+	}
+	
+	#bio {
+		max-width: 90%;
+	}
+	
+	.sun h1 {
+		display: inline;
+	}
+	
+	.tears {
+		-webkit-animation: none;
+		animation: none;
+		float: none;
+	}
+	
+	.big_text {
+		font-size: 7em;
+	}
+	
+	.medium_text {
+		font-size: 4.5em;
+	}
+	
+	.container {
+		margin-left: 30px;
+		margin-right: 0px;
 	}
 }
 	

@@ -1,22 +1,26 @@
-<link rel="stylesheet" href="/css/bootstrap.css" type="text/css" />
-<link rel="stylesheet" href="/css/home.css" type="text/css" />
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.js"></script>
-<script src="/galleria/galleria-1.2.9.min.js"></script>
 <!DOCTYPE html>
 <html lang="en">
-<div class="container">
+<head>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.js"></script>
+  <link rel="stylesheet" href="/galleria/themes/classic/galleria.classic.css">
+  <script src="/galleria/galleria-1.2.9.min.js"></script>
+  <link rel="stylesheet" href="/css/bootstrap.css" type="text/css" />
+  <link rel="stylesheet" href="/css/bootstrap-responsive.css" type="text/css" />
+  <link rel="stylesheet" href="/css/home.css" type="text/css" />
+</head>
+<section class="container">
   <div class="row">
-    <div id="header" class="span12">
+    <header class="span12">
       <h1 class="big_text tears lean_left">Tears</h1> 
       <div class="sun lean-right">
         <h1>of the</h1> <h1 class="medium_text">Sun</h1>
-      </div>
+      </header>
     </div>
   </div>
   <div class="row">
-    <div class="span12">
+    <section class="span12">
       <div class="row">
-        <div id="gallery" class="span8 gradient">
+        <section id="gallery" class="span8 gradient">
           <div id="galleria">
               <img src="/img/gk_0.jpg">
               <img src="/img/gk_1.jpg">
@@ -27,8 +31,8 @@
               <img src="/img/gk_6.jpg">
               <img src="/img/gk_7.jpg">
           </div>
-        </div>
-        <div id="bio" class="span4"><h5>Gustav Klimt</h5>
+        </section>
+        <section id="bio" class="span4"><h5>Gustav Klimt</h5>
           <div class="description">
           Gustav Klimt (July 14, 1862 – February 6, 1918) was an Austrian symbolist painter and one of the most prominent members of the 
           Vienna Secession   movement. Klimt is noted for his paintings, murals, sketches, and other art objects. Klimt's primary subject 
@@ -37,13 +41,15 @@
           include gold leaf. Klimt had previously used gold in his Pallas Athene (1898) and Judith I (1901), although the works most popularly 
           associated with this period are the Portrait of Adele Bloch-Bauer I (1907) and The Kiss (1907–08).
           </div>
-        </div>
+        </section>
       </div>
-    </div>
+    </section>
   </div>
-</div>
+</section>
 <script>
     Galleria.loadTheme('/galleria/themes/classic/galleria.classic.min.js');
-    Galleria.run('#galleria');
+    Galleria.run('#galleria', {
+        height: 0.65
+    });
 </script>
 </html>
